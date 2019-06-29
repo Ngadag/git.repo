@@ -1,0 +1,71 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+var rightAnswer = "тетя груша повесилась";
+var rightAnswer11 = "свисток";
+var rightAnswer12 = "свистулька";
+var rightAnswer13 = "свистун";
+var rightAnswer21 = "огурец";
+var rightAnswer22 = "арбуз";
+var rightAnswer31 = "ножницы";
+var yourAnswer = prompt("Отгадай загадку: \n 'Висит Груша, нельзя скушать.' \n У тебя три попытки.");
+yourAnswer = yourAnswer.toLowerCase();
+var maxCount = 3;
+var trueCount = 0
+
+	for(var count = 1; count <= maxCount; count ++ ){
+
+
+		if (yourAnswer == rightAnswer){
+			alert("Молодец! Возьми с полки пирожок!");
+			trueCount = trueCount + 1;
+			break;
+
+		}else if (count >= maxCount){
+			alert("Увы! Ты проиграл!");
+		alert("Правильный ответ - \n'Тетя Груша повесилась!");	
+			break;
+		}
+		
+		else if (yourAnswer != rightAnswer){
+			alert("Неправильно! Попробуй еще раз!");
+		}
+		yourAnswer = prompt(" ");
+		yourAnswer = yourAnswer.toLowerCase();
+	}
+
+var yourAnswer = prompt("Отгадай еще три загадки. \n Первая: \n Не валенок, а свистит")
+	yourAnswer = yourAnswer.toLowerCase();
+
+		if (yourAnswer == rightAnswer11 || yourAnswer == rightAnswer12 || yourAnswer == rightAnswer13){
+			alert("Правильно");
+			trueCount = trueCount + 1;
+		}
+		else{
+			alert("Неправильно");
+		}
+  		yourAnswer = prompt("Вторая загадка: \n Без окон, без дверей, полна горница людей");
+  		yourAnswer = yourAnswer.toLowerCase();
+
+  			if (yourAnswer == rightAnswer21 || yourAnswer == rightAnswer22){
+  				alert("Правильно");
+  				trueCount = trueCount + 1;
+  			}
+  			else{
+  				alert("Неправильно");
+  			}
+  			yourAnswer = prompt("Третья загадка: \n Два конца, два кольца, в середине - гвоздик");
+  			yourAnswer = yourAnswer.toLowerCase();
+  			
+  				if (yourAnswer == rightAnswer31){
+  					trueCount = trueCount + 1;
+  					alert("Правильно\n Вы отгадали " + trueCount + " загадки");
+  					
+  			}
+  				else{
+  					alert("Неправильно \n Вы отгадали " + trueCount + " загадки");
+  				}
+
+	
+
+</script>
