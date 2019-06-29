@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+var yourSum = +prompt("Какую сумму вы хотите положить на счет?");
+var yourPercent = +prompt("Каким будет годовой процент?");
+
+for (var year = 1; year < 6; year++){
+	yourSum = (yourSum + yourSum * yourPercent / 100)
+	document.write("После " + year + " года у вас " + yourSum.toFixed(2) + "рублей <br />");
+		}
+
+</script>
